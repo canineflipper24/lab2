@@ -1,0 +1,43 @@
+body{
+  margin: 40px;
+  background-color: grey;
+}
+.header
+{
+  grid-area: header;
+}
+.menu
+{
+  grid-area: menu;
+}
+.footer{
+  grid-area: footer;
+}
+.wrapper {
+  background-color: #fff;
+  color: #444;
+}
+.wrapper
+{
+  display: grid;
+  grid-template-areas:
+  "header" "header"
+  "menu" "footer"
+  "footer" "footer"
+}
+.box {
+  background-color: grey;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.header
+{
+    background-color: blue;
+}
+
+  .menu,.footer {
+  background-color: #999;
+}
