@@ -21,7 +21,7 @@
     <script>
     if("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(function(position) {
-        var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+        var latlng = new google.maps.LatLng(40.249927, -111.647986);
         var myOptions = {
           zoom: 8,
           center: latlng,
@@ -62,6 +62,11 @@ marker.addListener('click', function() {
       Click on the flag for dates and information
     </p>
     <div id="map_canvas"></div>
-
+    <style type="text/css">
+         #map_canvas {
+            width: 500px;
+            height: 500px;
+          }
+        </style>
   </body>
 </html>
